@@ -3,9 +3,9 @@ import { Box } from "@mui/system";
 
 const StyledVerse = {
   StyledText: styled(Box)({
-    maxWidth: "400px",
     display: "flex",
     width: "100%",
+    marginTop: "3px",
   }),
   StyledVerseNumber: styled(Box)({
     fontWeight: "bold",

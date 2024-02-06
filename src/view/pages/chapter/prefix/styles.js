@@ -9,7 +9,7 @@ const StyledPrefix = {
   }),
   StyledText: styled(Box)({
     textAlign: "center",
-    fontSize: "12px",
+    fontSize: "14px",
   }),
 };
 export default StyledPrefix;
