@@ -43,8 +43,8 @@ function App() {
         payload: books,
       });
     }
-
     getBooks();
+    // eslint-disable-next-line
   }, []);
 
   return (

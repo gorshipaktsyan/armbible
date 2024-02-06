@@ -1,12 +1,4 @@
-import {
-  AppBar,
-  Toolbar,
-  Box,
-  IconButton,
-  Slide,
-  useScrollTrigger,
-} from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { AppBar, Toolbar, Box, Slide, useScrollTrigger } from "@mui/material";
 import StyledAppBar from "./styles";
 
 const { StyledTitle } = StyledAppBar;
@@ -34,17 +26,9 @@ export default function AppBarComponent({ fullName, chapterName }) {
         }}
       >
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            // onClick={handleDrawerToggle}
-          >
-            <MenuIcon sx={{ fontSize: "30px" }} />{" "}
-          </IconButton>
-          <StyledTitle sx={{ fontSize: "20px", cursor: "default" }}>
-            <Box>{fullName}</Box>
-            <Box sx={{ marginLeft: "5px" }}>{chapterName}</Box>
+          <StyledTitle>
+            <Box sx={{ fontSize: "16px" }}>{fullName}</Box>
+            <Box sx={{ fontSize: "14px" }}>{chapterName}</Box>
           </StyledTitle>
         </Toolbar>
       </AppBar>

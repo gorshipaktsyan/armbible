@@ -110,8 +110,8 @@ export default function Chapter() {
     <>
       <AppBar fullName={book.fullName} chapterName={chapterName} />
       <ScrollToTop currentChapter={currentChapter} />
-      <StyledContainer>
-        <StyledChapter {...handlers}>
+      <StyledContainer {...handlers}>
+        <StyledChapter>
           {currentChapter === 1 && (
             <>
               <SubjectTitle>Թեմա՝</SubjectTitle>

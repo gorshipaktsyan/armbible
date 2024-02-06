@@ -49,9 +49,7 @@ export default function Books() {
             );
           })}
         </StyledList>
-        <Box sx={{ position: "fixed", left: "48%", bottom: "50px" }}>
-          version 1.1.1
-        </Box>
+        <Box sx={{ position: "fixed", bottom: "50px" }}>version 1.1.1</Box>
         {isOpen && (
           <BookModal
             chapters={chapters}
