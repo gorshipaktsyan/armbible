@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import useAppState from "../libs/hooks/useAppState";
 
 function App() {
-  const { state, dispatch } = useAppState();
+  const { dispatch } = useAppState();
   const routes = [
     {
       path: "/armbible",

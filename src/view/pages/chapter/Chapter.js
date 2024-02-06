@@ -31,7 +31,7 @@ const {
 export default function Chapter() {
   const navigate = useNavigate();
   const { state, dispatch } = useAppState();
-  const { currentBook, currentChapter, currentVerse } = state.chapter;
+  const { currentBook, currentChapter } = state.chapter;
   const [verses, SetVerses] = useState(
     BooksService.getChapter({
       currentBook,
