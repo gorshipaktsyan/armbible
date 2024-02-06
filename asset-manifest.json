@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/armbible/static/js/main.12bfbcec.js",
+    "main.js": "/armbible/static/js/main.94f70eb8.js",
     "static/js/592.5592179e.chunk.js": "/armbible/static/js/592.5592179e.chunk.js",
     "service-worker.js": "/armbible/service-worker.js",
     "index.html": "/armbible/index.html",
-    "main.12bfbcec.js.map": "/armbible/static/js/main.12bfbcec.js.map",
+    "main.94f70eb8.js.map": "/armbible/static/js/main.94f70eb8.js.map",
     "592.5592179e.chunk.js.map": "/armbible/static/js/592.5592179e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.12bfbcec.js"
+    "static/js/main.94f70eb8.js"
   ]
 }
