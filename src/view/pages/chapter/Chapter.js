@@ -82,7 +82,7 @@ export default function Chapter() {
   );
 
   function handleBack() {
-    navigate("/");
+    navigate("/armbible");
   }
   return (
     <StyledContainer {...handlers}>

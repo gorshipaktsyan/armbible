@@ -29,7 +29,7 @@ export default function Books() {
       payload: { currentChapter },
     });
     setIsOpen(false);
-    navigate("/chapter");
+    navigate("/armbible/chapter");
   }
   return (
     <StyledContainer>
