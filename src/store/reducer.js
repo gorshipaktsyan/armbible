@@ -22,7 +22,6 @@ const reducer = (state, action) => {
       };
     }
     case actions.SET_CURRENT_BCV: {
-      console.log(action.payload);
       return {
         ...state,
         chapter: {

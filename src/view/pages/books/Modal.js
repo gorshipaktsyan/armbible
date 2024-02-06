@@ -1,10 +1,12 @@
 import { Modal } from "@mui/material";
 import BooksStyledComponents from "./styles";
 
-const { StyledModal, StyledModalItem } = BooksStyledComponents;
+const { StyledModal, StyledModalTitle, StyledModalList, StyledModalItem } =
+  BooksStyledComponents;
 
 export default function BookModal({
   chapters,
+  bookName,
   isOpen,
   setIsOpen,
   handleChapterClick,
@@ -12,18 +14,21 @@ export default function BookModal({
   return (
     <Modal open={isOpen} onClose={() => setIsOpen(false)}>
       <StyledModal>
-        {[...Array(chapters + 1).keys()]
-          .filter((el) => el !== 0)
-          .map((chapter) => {
-            return (
-              <StyledModalItem
-                key={chapter}
-                onClick={() => handleChapterClick(chapter)}
-              >
-                {chapter}
-              </StyledModalItem>
-            );
-          })}
+        <StyledModalTitle>{bookName}</StyledModalTitle>
+        <StyledModalList>
+          {[...Array(chapters + 1).keys()]
+            .filter((el) => el !== 0)
+            .map((chapter) => {
+              return (
+                <StyledModalItem
+                  key={chapter}
+                  onClick={() => handleChapterClick(chapter)}
+                >
+                  {chapter}
+                </StyledModalItem>
+              );
+            })}
+        </StyledModalList>
       </StyledModal>
     </Modal>
   );

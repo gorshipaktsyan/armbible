@@ -13,18 +13,13 @@ const ChapterStyledComponents = {
     width: "400px",
     display: "flex",
     flexDirection: "column",
-    marginTop: "15px",
-    marginBottom: "50px",
+    paddingTop: "64px",
   }),
-  StyledVerse: styled(Box)({
-    maxWidth: "400px",
+  StyledContent: styled(Box)({
     display: "flex",
-    justifyContent: "center",
-    width: "100%",
-  }),
-  StyledVerseNumber: styled(Box)({
-    fontWeight: "bold",
-    marginRight: "5px",
+    flexDirection: "column",
+    marginBottom: "50px",
+    padding: "0px 10px",
   }),
   SubjectTitle: styled(Box)({
     fontSize: "16px",
@@ -35,12 +30,6 @@ const ChapterStyledComponents = {
   StyledSubject: styled(Box)({
     fontSize: "16px",
     textAlign: "center",
-  }),
-  StyledHeader: styled(Box)({
-    display: "flex",
-    flexDirection: "column",
-    textAlign: "center",
-    fontWeight: "bold",
   }),
   StyledFab: styled(Fab)({
     zIndex: 1000,

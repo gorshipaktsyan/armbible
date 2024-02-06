@@ -1,17 +1,17 @@
 import { Box } from "@mui/material";
-import Prefix from "./Prefix";
-import ChapterStyledComponents from "./styles";
+import Prefix from "../prefix/Prefix";
+import StyledVerse from "./styles";
 
-const { StyledVerse, StyledVerseNumber } = ChapterStyledComponents;
+const { StyledText, StyledVerseNumber } = StyledVerse;
 
 export default function Verse({ id, prefix, number, verse }) {
   return (
     <>
       <Prefix prefix={prefix} />
-      <StyledVerse>
+      <StyledText>
         <StyledVerseNumber>{number}</StyledVerseNumber>
         <Box>{verse}</Box>
-      </StyledVerse>
+      </StyledText>
     </>
   );
 }
