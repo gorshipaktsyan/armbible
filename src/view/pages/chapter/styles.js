@@ -18,7 +18,7 @@ const ChapterStyledComponents = {
   StyledContent: styled(Box)({
     display: "flex",
     flexDirection: "column",
-    marginBottom: "50px",
+    marginBottom: "100px",
     padding: "0px 10px",
   }),
   SubjectTitle: styled(Box)({
